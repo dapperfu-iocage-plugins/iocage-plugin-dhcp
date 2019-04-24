@@ -1,27 +1,27 @@
 {
+   "artifact" : "https://github.com/jed-frey-freenas-plugins/iocage-plugin-dhcp.git",
+   "properties" : {
+      "boot" : "on",
+      "bpf" : "yes",
+      "dhcp" : "on",
+      "vnet" : "on",
+      "allow_raw_sockets" : "1"
+   },
    "fingerprints" : {
       "plugin-default" : [
          {
-            "fingerprint" : "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438",
-            "function" : "sha256"
+            "function" : "sha256",
+            "fingerprint" : "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
          }
       ]
    },
-   "properties" : {
-      "dhcp" : "on",
-      "boot" : "on",
-      "vnet" : "on",
-      "allow_raw_sockets" : "1",
-      "bpf" : "yes"
-   },
-   "official" : false,
    "pkgs" : [
       "pkg",
       "ca_root_nss",
       "openmdns"
    ],
-   "packagesite" : "http://pkg.FreeBSD.org/${ABI}/quarterly",
-   "artifact" : "https://github.com/jed-frey-freenas-plugins/iocage-plugin-dhcp.git",
+   "name" : "dhcp",
+   "official" : false,
    "release" : "11.2-RELEASE",
-   "name" : "dhcp"
+   "packagesite" : "http://pkg.FreeBSD.org/${ABI}/quarterly"
 }
